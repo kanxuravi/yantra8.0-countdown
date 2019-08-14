@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,300i,700|Open+Sans:300,300i,400,400i,700,700i,800,800i');
+
+html, body{
+    background-color: #109d58 !important;
+}
+
+#image {
+  background-image: url(yantra.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: top center;
+  height: 50vh;
+  width: 100%;
+}
+
+#countup {
+  text-align: center;
+  color: #109d58;
+}
+
+
+#countup span {
+  font-family: "Open Sans", sans-serif;
+  font-size: 24px;
+  font-weight: 100;
+  display: block;
+  line-height: 28px;
+}
+#countup p {
+  display: inline-block;
+  margin: 10px 0 10px;
+  border-radius: 3px;
+  color: #109d58;
+  min-width: 2.6rem;
+  font-family: "Open Sans Condensed", sans-serif;
+  font-size: 48px;
+  font-weight: 900;
+}
+
+.card{
+    margin-left: 10%;
+    margin-right: 10%;
+    border-radius: 2.5% !important;
+    opacity: 0.8 !important;
+    margin-top: 2% !important;
+    padding-top: 0% !important;
+    padding: 3%;
+    box-shadow: 0 0 40px rgba(0,0,0,1) !important;
+    display: block !important;
+}
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color:#109d58;
+  color: white;
+  text-align: center;
+  font-family: michroma;
+}
+
+a, a:hover, a:focus, a:active {
+  text-decoration: none !important;
+  color: white !important;
+}

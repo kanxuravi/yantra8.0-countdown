@@ -1,0 +1,44 @@
+<html>
+    <head>
+        <title>Yantra 8.0</title>
+        <link rel="stylesheet" type="text/css" href="main.css">
+        <script src="main.js"></script>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <link type="text/css" rel="stylesheet" href="clock_assets/flipclock.css" />
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <script type="text/javascript" src="clock_assets/flipclock.js"></script>
+        <link href="https://fonts.googleapis.com/css?family=Michroma&display=swap" rel="stylesheet"> 
+        <style text="text/css">body .flip-clock-wrapper ul li a div div.inn, body .flip-clock-small-wrapper ul li a div div.inn { color: #CCCCCC; background-color: #333333; } body .flip-clock-dot, body .flip-clock-small-wrapper .flip-clock-dot { background: #323434; } body .flip-clock-wrapper .flip-clock-meridium a, body .flip-clock-small-wrapper .flip-clock-meridium a { color: #323434; }</style>
+
+    </head>
+ 
+    <body>
+        <div class="view">
+            <div class="card">
+                <div class="card-body">
+                    <div id="image"></div>
+                </div>
+                <div class="clock-builder-output"></div>
+                <script type="text/javascript">
+                    $(function(){
+                        FlipClock.Lang.Custom = { days:'Days', hours:'Hours', minutes:'Minutes', seconds:'Seconds' };
+	                    var opts = {
+		                clockFace: 'DailyCounter',
+		                countdown: true,
+		                language: 'Custom'
+	                };  
+	                var countdown = 1568714700 - ((new Date().getTime())/1000); // from: 09/17/2019 03:50 pm +0545
+	                countdown = Math.max(1, countdown);
+	                $('.clock-builder-output').FlipClock(countdown, opts);});
+                </script>
+            </div> 
+            <div class="footer">
+                <p>Designed by <a href="https://www.google.com/search?q=kanxuravi" target="_blank">@kanxuravi</a></p>
+            </div>
+        </div>    
+    </body>
+    </html>        
