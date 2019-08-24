@@ -40,7 +40,7 @@ html, body{
 .card{
     margin-left: 10%;
     margin-right: 10%;
-    border-radius: 2.5% !important;
+    border-radius: 2% !important;
     opacity: 0.8 !important;
     margin-top: 2% !important;
     padding-top: 0% !important;
@@ -63,4 +63,13 @@ html, body{
 a, a:hover, a:focus, a:active {
   text-decoration: none !important;
   color: white !important;
+}
+
+.container {
+  text-align: center !important;
+}
+
+.clock-builder-output{
+  display: inline-block !important;
+  width: auto !important;
 }
